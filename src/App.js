@@ -35,7 +35,7 @@ function App() {
         <div className="mid-page">
           <div>
             <p>{Data.name}</p>
-            <h1>{Data.main.temp -273}°C</h1>
+            <h1>{Math.floor(Data.main.temp - 273)}°C</h1>
           </div>
           <div>
             <h4>{Data.weather[0].main}</h4> {/* Update weather to weather[0] */}
@@ -46,7 +46,7 @@ function App() {
       {Data && (
         <div className="bottom">
           <div>
-            <h3>{Data.main.temp - 273}°C</h3>
+            <h3>{Math.floor(Data.main.temp - 273)}°C</h3>
             <p>Feels Like</p>
           </div>
           <div>
