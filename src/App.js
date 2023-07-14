@@ -29,6 +29,7 @@ function App() {
         }}
       />
       <button type="button" value='submit' onClick={searchLocation} className="btn">Submit</button>
+      <p>Dev: Abayomi Aremo</p>
       
       {/* Add a conditional check before accessing Data properties */}
       {Data && (
